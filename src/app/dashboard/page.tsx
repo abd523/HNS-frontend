@@ -25,7 +25,10 @@ export default function DashboardPage() {
         setStats(res.data);
         setLoading(false);
       })
-      .catch((err) => console.error("Error fetching stats", err));
+      .catch((err) => {
+        console.error("Error fetching stats", err);
+        setLoading(false);
+       });
   }, []);
 
   if (loading) {

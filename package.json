@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint",
+    "deploy": "vercel --prod" 
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
